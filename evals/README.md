@@ -18,6 +18,7 @@ evals/
     testers.md   pseudonymous register of who ran what
     prompts/     open questions the evidence is asking
   tests/       capability and regression cases. Synthetic
+  student-study/  the UCL student beta research plan and its documents. No participant data
 ```
 
 **Raw is evidence and is never rewritten.** If a skill changes afterwards, the wiki
@@ -37,7 +38,7 @@ Beta reports come in through three channels:
 |---|---|---|
 | GitHub issue, *session report* template | Anyone | The report, anonymised. Issues are public, so it should already be |
 | Reply to the invite email | Practitioners | Only with consent to publish. Otherwise the finding and no conversation |
-| Student study feedback form | Students | **Stays within the study.** Commit only what the study's consent allows: usually an anonymised note, or the finding alone |
+| Student study feedback form | Students | **Stays within the study.** Commit only what the study's consent allows: usually an anonymised note, or the finding alone. See `student-study/README.md` |
 
 Then:
 
