@@ -33,3 +33,4 @@ Tests the evidence is asking for. Not a backlog: delete one when a report answer
 - `../raw/alpha/` — the 17 alpha sessions, `0.1.1`. Frozen.
 - `../raw/beta/` — beta reports, one file each. [`TEMPLATE.md`](../raw/beta/TEMPLATE.md) is the header.
 - `../tests/` — the capability pack and two regression files. Synthetic.
+- `../student-study/` — the UCL student beta research plan and the documents students see. No participant data.
