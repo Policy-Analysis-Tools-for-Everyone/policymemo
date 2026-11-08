@@ -50,7 +50,7 @@ BETA_OUT = ROOT / "docs" / "beta"
 CHANGELOG = ROOT / "site" / "updates" / "changelog.md"
 UPDATES_OUT = ROOT / "docs" / "updates"
 ICONS = ROOT / "docs" / "icons"
-MASCOT = ROOT / "docs" / "mascot.svg"
+MARK = ROOT / "docs" / "mark.svg"
 # The release version, so the site always shows the number that ships.
 VERSION = next(p["version"] for p in json.loads((ROOT / ".claude-plugin" / "marketplace.json").read_text())["plugins"] if p["name"] == "mdee")
 # Categories in use among published posts. Labels and filters show only once there are two,
@@ -63,7 +63,7 @@ CATEGORIES = {"why": "Why it works", "skills": "The skills", "guides": "Guides",
 SKILLS = [
     ("problem", "Problem", "problem"), ("stakeholders", "Stakeholders", "stakeholders"),
     ("evidence", "Evidence", "evidence"), ("options", "Options", "options"),
-    ("criteria", "Criteria", "criteria"), ("outcomes", "Outcomes", "uncertainty"),
+    ("criteria", "Criteria", "criteria"), ("outcomes", "Outcomes", "outcomes"),
     ("trade-offs", "Trade-offs", "tradeoffs"), ("decide", "Decide", "decision"),
     ("story", "Story", "story"),
 ]
@@ -135,7 +135,7 @@ def updates_link(home):
 def page(title, description, body, css, home, depth_note="", current="notes"):
     def cur(name):
         return ' aria-current="page"' if current == name else ""
-    mascot = svg_inline(MASCOT, "logo", "lg-").replace('fill="#1c1b18"', 'fill="currentColor"')
+    logo = svg_inline(MARK, "logo", "lg-").replace('fill="#1c1b18"', 'fill="currentColor"')
     return f"""<!doctype html>
 {GENERATED}
 <html lang="en-GB">
@@ -161,7 +161,7 @@ def page(title, description, body, css, home, depth_note="", current="notes"):
 <body>
 <header class="top">
   <div class="wrap bar">
-    <a class="brand" href="{home}" aria-label="policymemo.ai home">{mascot}</a>
+    <a class="brand" href="{home}" aria-label="policymemo.ai home">{logo}<span class="wordmark" aria-hidden="true">policymemo.ai</span></a>
     <nav aria-label="Main">
       <a class="plain" href="{home}#what">What it does</a>
       <a class="plain" href="{home}#how">How it behaves</a>
