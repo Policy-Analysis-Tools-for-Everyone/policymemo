@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Draw the policymemo.ai mark and the nine skill icons as inked SVG.
 
-There is no mascot. The mark is a memo with a red tick: it shows what the tool
-does to a memo, not a character looking at one. Each skill icon shows the
-analytical move, in ink, with one red mark for the thing that matters.
+There is no mascot. The mark is a plain ink burst beside the name "policymemo.ai".
+Each skill icon shows the analytical move, in ink, with one red mark for the
+thing that matters.
 
 Every shape is drawn as a clean stroke or polygon, then its outline is roughened
 with smooth noise so it reads as printed ink rather than vector. The noise is
@@ -105,30 +105,26 @@ def svg(view, layers, seed, amp=0.55, scale=1.2, title=None, extra=""):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{view}">{t}{extra}{body}</svg>\n'
 
 
-# ---- the mark: a memo, signed off ------------------------------------------
+# ---- the mark: an ink burst ------------------------------------------------
+# Keep it jagged and inky. A smooth, rounded burst drifts toward the Claude logo.
 
-def mark_layers():
-    page = Polygon([(10, 8), (60, 8), (78, 26), (78, 100), (10, 100)])
-    flap = Polygon([(60, 8), (78, 26), (60, 26)]).buffer(-2.2, join_style="mitre")
-    page = page.difference(Polygon([(58, 4), (82, 4), (82, 30), (58, 30)]).intersection(
-        Polygon([(60, 8), (78, 26), (60, 26)]).buffer(1.4, join_style="mitre")))
-    lines = unary_union([stroke([(22, 40), (56, 40)], 7), stroke([(22, 54), (60, 54)], 7),
-                         stroke([(22, 68), (44, 68)], 7)])
-    tick_path = [(50, 80), (61, 92), (86, 62)]
-    tick = stroke(tick_path, 11)
-    knock = stroke(tick_path, 21)
-    ink = unary_union([page, flap]).difference(lines).difference(knock)
-    return [(INK, ink), (RED, tick)]
+def mark_layers(points=18, outer=46, inner=33):
+    pts = []
+    for i in range(2 * points):
+        r = outer if i % 2 == 0 else inner
+        a = math.pi * i / points - math.pi / 2
+        pts.append((50 + r * math.cos(a), 50 + r * math.sin(a)))
+    return [(INK, Polygon(pts))]
 
 
 def write_mark():
     layers = mark_layers()
-    view = "4 2 90 104"
+    view = "0 0 100 100"
     (ROOT / "docs" / "mark.svg").write_text(
-        svg(view, layers, seed=7, title="policymemo.ai"), encoding="utf-8")
+        svg(view, layers, seed=3, amp=0.7, scale=1.0, title="policymemo.ai"), encoding="utf-8")
     # The favicon: the same drawing, ink turned to paper in dark mode.
     style = (f"<style>.i{{fill:{INK}}}@media (prefers-color-scheme:dark){{.i{{fill:#f6f4ee}}}}</style>")
-    s = svg(view, layers, seed=7, extra=style).replace(f'fill="{INK}"', 'class="i"')
+    s = svg(view, layers, seed=3, amp=0.7, scale=1.0, extra=style).replace(f'fill="{INK}"', 'class="i"')
     (ROOT / "docs" / "favicon.svg").write_text(s, encoding="utf-8")
 
 

@@ -152,7 +152,8 @@ policymemo.ai is a static site served by GitHub Pages from `docs/`.
 | `/updates` | Plain changelog, newest first | `site/updates/changelog.md` |
 | `/blog` | Notes. Linked from the footer, not the nav | `site/blog/posts/` |
 
-**The mark.** There is no mascot. The mark is a memo with a red tick, and each skill
+**The mark.** There is no mascot. The brand is a plain ink burst beside the name
+"policymemo.ai"; keep the burst jagged so it never drifts toward the Claude logo. Each skill
 icon shows the analytical move in ink with one red mark for the thing that matters.
 They are drawn in `tools/build-marks.py`; change a drawing there and rerun it, then
 paste any changed icon into the skill cards in `docs/index.html`. Keep the ink texture,

@@ -161,7 +161,7 @@ def page(title, description, body, css, home, depth_note="", current="notes"):
 <body>
 <header class="top">
   <div class="wrap bar">
-    <a class="brand" href="{home}" aria-label="policymemo.ai home">{logo}<span class="wordmark" aria-hidden="true">policymemo</span></a>
+    <a class="brand" href="{home}" aria-label="policymemo.ai home">{logo}<span class="wordmark" aria-hidden="true">policymemo.ai</span></a>
     <nav aria-label="Main">
       <a class="plain" href="{home}#what">What it does</a>
       <a class="plain" href="{home}#how">How it behaves</a>
