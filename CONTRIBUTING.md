@@ -41,6 +41,7 @@ CI rebuilds everything on push to `main`. To build locally:
 python3 tools/build-zips.py    # dist/skills/ and dist/download/, from skills/ and marketplace.json
 python3 tools/build-ports.py   # dist/ports/, from skills/ and ports/core.md
 python3 tools/build-site.py    # docs/, from site/ (needs: pip install markdown)
+python3 tools/build-marks.py   # docs/mark.svg, favicon.svg and icons/ (needs: pip install shapely)
 ```
 
 If `house-rules` has changed, `build-ports.py` stops on purpose until
@@ -150,6 +151,12 @@ policymemo.ai is a static site served by GitHub Pages from `docs/`.
 | `/install` | Set-up instructions, linked from invite emails | `site/install/` |
 | `/updates` | Plain changelog, newest first | `site/updates/changelog.md` |
 | `/blog` | Notes. Linked from the footer, not the nav | `site/blog/posts/` |
+
+**The mark.** There is no mascot. The mark is a memo with a red tick, and each skill
+icon shows the analytical move in ink with one red mark for the thing that matters.
+They are drawn in `tools/build-marks.py`; change a drawing there and rerun it, then
+paste any changed icon into the skill cards in `docs/index.html`. Keep the ink texture,
+the cream paper, the one red accent and the serif headlines.
 
 Essays and reflection are published on
 [CIVICWORKS](https://civicworks.substack.com/s/policymemoai), not on policymemo.ai.

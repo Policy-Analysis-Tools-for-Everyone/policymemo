@@ -7,7 +7,6 @@
     --faint: #e4e0d5;
     --line: #d9d4c7;
     --red: #EB4043;
-    --mascot: var(--ink);
     --accent: #C42B2E;
     --accent-ink: #ffffff;
     --accent-soft: #fbe4e2;
@@ -29,8 +28,9 @@
   header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
     backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-  .brand { display: inline-flex; align-items: center; text-decoration: none; }
-  .brand .logo { width: 19px; height: 29px; color: var(--mascot); }
+  .brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+  .brand .logo { width: 22px; height: 26px; flex: none; }
+  .brand .wordmark { font: 400 21px/1 var(--serif); font-variation-settings: "SOFT" 50; letter-spacing: -.02em; }
   .bar nav { display: flex; align-items: center; gap: 22px; font-size: 14px; }
   .bar nav a.plain { text-decoration: none; color: var(--muted); }
   .bar nav a.plain:hover, .bar nav a[aria-current="page"] { color: var(--ink); }
@@ -101,9 +101,7 @@
   @media (min-width: 560px) { .skill-grid { grid-template-columns: 1fr 1fr; } }
   @media (min-width: 900px) { .skill-grid { grid-template-columns: repeat(3, 1fr); } }
   .skill-grid li { background: var(--surface); padding: 18px 22px 22px; display: grid; gap: 4px; align-content: start; }
-  .skill-grid .icon { width: 84px; height: 72px; margin: -6px 0 6px -12px; color: var(--mascot); overflow: visible; }
-  .skill-grid .icon .ink { fill: currentColor; }
-  .skill-grid .icon .line { stroke: currentColor; stroke-width: 28; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+  .skill-grid .icon { width: 64px; height: 51px; margin: 0 0 10px; color: var(--ink); overflow: visible; }
   .skill-grid h3 { font: 500 21px/1.25 var(--serif); margin: 0; }
   .skill-grid .soon { font-size: 13px; color: var(--muted); }
   .skill-grid .read { font-size: 14px; color: var(--accent); font-weight: 500; text-decoration: none; }
