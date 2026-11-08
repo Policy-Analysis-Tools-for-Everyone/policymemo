@@ -67,9 +67,9 @@ SKILLS = [
     ("trade-offs", "Trade-offs", "tradeoffs"), ("decide", "Decide", "decision"),
     ("story", "Story", "story"),
 ]
-# Where the CIVICWORKS link in the nav goes: the page on CIVICWORKS for writing about policymemo.ai.
+# Where the CIVICWORKS link in the nav goes: for now, the CIVICWORKS home page.
 # The build also writes it into the homepage nav, so this is the only place to change it.
-CIVICWORKS_NAV = "https://civicworks.substack.com/s/policymemoai"
+CIVICWORKS_NAV = "https://www.civicworks.co/"
 # Every CIVICWORKS link opens in a new tab, so policymemo.ai stays open behind it.
 CIVICWORKS_NAV_LINK = (f'<a class="plain dot-link" href="{CIVICWORKS_NAV}" target="_blank" rel="noopener" '
                        'aria-label="CIVICWORKS (opens in a new tab)">CIVICWORKS<span class="new-dot" aria-hidden="true"></span></a>')
@@ -176,7 +176,7 @@ def page(title, description, body, css, home, depth_note="", current="notes"):
 </main>
 <footer>
   <div class="wrap row">
-    <span>policymemo.ai · beta {VERSION} · by <a href="https://civicworks.substack.com" target="_blank" rel="noopener">CIVICWORKS</a></span>
+    <span>policymemo.ai · beta {VERSION} · by <a href="{CIVICWORKS_NAV}" target="_blank" rel="noopener">CIVICWORKS</a></span>
     <nav aria-label="Footer">
       <a href="{home}">Home</a>
       <a href="{home}beta/">Beta</a>
