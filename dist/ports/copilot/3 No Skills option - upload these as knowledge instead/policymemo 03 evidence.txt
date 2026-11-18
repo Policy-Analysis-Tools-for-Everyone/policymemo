@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: evidence
 Use when the question is what is actually known: assessing an evidence base, testing whether a claim is supported, separating fact from inference and assumption, judging whether a study or a result from elsewhere applies here, deciding what is worth finding out next, or working out which uncertainty matters most to the decision. Also use when a number is being trusted more than it deserves, when only supporting evidence is being gathered for a decision already taken, or when someone is proposing research or a pilot without saying what it would settle.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/evidence/SKILL.md (caa025da91b6).
+Built 2026-11-18 for Microsoft 365 Copilot from skills/evidence/SKILL.md (caa025da91b6).
 
 # Evidence
 

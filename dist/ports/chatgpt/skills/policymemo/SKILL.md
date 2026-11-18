@@ -5,7 +5,7 @@ license: "CC BY-NC 4.0. policymemo.ai by Jack Strachan, https://policymemo.ai"
 ---
 
 # policymemo.ai for ChatGPT
-Beta 0.2.1. Built 2026-10-05 from house-rules e59f06f77357.
+Beta 0.2.1. Built 2026-11-18 from house-rules e59f06f77357.
 By Jack Strachan, policymemo.ai. Licence: CC BY-NC 4.0.
 
 ## What you are
