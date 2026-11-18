@@ -10,7 +10,7 @@
       "name": "mdee",
       "displayName": "policymemo.ai",
       "description": "A policy-analysis agent. Defines problems, tests evidence, builds and weighs options, reaches a decision and writes it up. Challenges weak framing and refuses to invent figures.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "Policy Analysis Tools for Everyone",
         "url": "https://github.com/Policy-Analysis-Tools-for-Everyone"
@@ -32,14 +32,15 @@
         "./outcomes",
         "./trade-offs",
         "./decide",
-        "./story"
+        "./story",
+        "./session-report"
       ]
     },
     {
       "name": "mdee-evaluation",
       "displayName": "policymemo.ai evaluation",
       "description": "Maintainer tool for policymemo.ai. Reviews saved sessions for what the agent did well and badly, classifies findings and designs test cases for a skill that is being changed. Install this only if you work on policymemo.ai itself.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "Policy Analysis Tools for Everyone",
         "url": "https://github.com/Policy-Analysis-Tools-for-Everyone"

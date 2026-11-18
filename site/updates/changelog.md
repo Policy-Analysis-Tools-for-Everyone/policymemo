@@ -2,6 +2,10 @@
      Newest first. One "## date · version" heading per release, then one line per change.
      Say what changed for the person using it. The reasoning belongs in a CIVICWORKS essay. -->
 
+## 18 November 2026 · 0.2.1
+
+- New: say "report this session" at any point and policymemo.ai drafts a session report from the conversation, goes through it with you to take out anything sensitive, and gives you a link to send it, either as a public GitHub issue or as a private email. Nothing is sent until you press Submit or Send.
+
 ## 5 October 2026 · 0.2.0
 
 - New: policymemo.ai for ChatGPT, as a plugin holding 10 skills.

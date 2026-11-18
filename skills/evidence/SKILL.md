@@ -11,7 +11,7 @@ description: >
   without saying what it would settle.
 license: "CC BY-NC 4.0. policymemo.ai by Jack Strachan, https://policymemo.ai"
 metadata:
-  version: 0.2.0
+  version: 0.2.1
   status: written, behaviourally tested in 2 real sessions, plus 2 reported (see evals/)
 ---
 

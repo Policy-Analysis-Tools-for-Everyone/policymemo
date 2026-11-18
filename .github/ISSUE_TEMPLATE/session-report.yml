@@ -20,6 +20,9 @@ body:
         If the conversation cannot be made safe that way, answer the questions
         below and leave the excerpt out. A described problem is still useful.
 
+        If you got here from policymemo.ai's own report link, the form is
+        already filled in. Read every box before you submit: it is your report.
+
   - type: textarea
     id: goal
     attributes:
@@ -76,13 +79,24 @@ body:
       required: false
 
   - type: input
+    id: skills
+    attributes:
+      label: Which skills loaded, if you could tell?
+      description: >
+        If you asked policymemo.ai to report the session, it fills this in from
+        what it loaded. Otherwise leave it blank.
+      placeholder: e.g. house-rules, problem, evidence, or not sure
+    validations:
+      required: false
+
+  - type: input
     id: version
     attributes:
       label: Which version of policymemo.ai?
       description: >
         In Claude, Customize then Plugins shows it next to policymemo.ai. The
         Copilot and Gemini versions say it in their Read me first file.
-      placeholder: e.g. 0.2.0, or not sure
+      placeholder: e.g. 0.2.1, or not sure
     validations:
       required: false
 

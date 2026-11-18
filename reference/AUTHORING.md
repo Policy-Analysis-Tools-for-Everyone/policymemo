@@ -1,7 +1,7 @@
 # Authoring a skill
 
-How to write or revise one skill, so that 11 separately-authored files read as one
-agent rather than 11 documents.
+How to write or revise one skill, so that 12 separately-authored files read as one
+agent rather than 12 documents.
 
 **Status: beta.** Revised as skills are tested, which is the point. Anything here
 that turns out to be wrong in practice should be changed, not worked around.
@@ -15,7 +15,7 @@ methods, canonical, deliberately rich: provenance, distinctions, source synthesi
 worked examples, anti-patterns, scaffolds, boundaries and self-check rubrics. They
 are written for maintainers and for future revisions.
 
-**The skill layer** is `skills/`. Eleven runtime files containing only the
+**The skill layer** is `skills/`. Twelve runtime files containing only the
 behaviour that changes what the agent does in a live conversation.
 
 **Method completeness is not skill completeness.** The most common way to write a
@@ -232,7 +232,7 @@ reason.
    other side, and it is the one the first real test actually hit.
 2. **Do not restate the house rules.** Tone, question discipline, evidence
    discipline, competing framings, the vague-term challenge, the three standing
-   considerations and the writing rules live in `house-rules` only. Eleven copies
+   considerations and the writing rules live in `house-rules` only. Twelve copies
    drift; one does not.
 3. **Never name the method or framework in output, but use its vocabulary
    freely.** No "using the third step", no explaining the method instead of
@@ -424,8 +424,10 @@ Agent Skills. Nothing about the format is Claude-specific.
 someone install policymemo.ai from inside normal Claude by naming this repository. It
 lists 2 plugin entries, both drawing from the same `skills/` folder:
 
-- `mdee`, carrying `house-rules` and the 10 policy capabilities. What the public
-  installs.
+- `mdee`, carrying `house-rules`, the 10 policy capabilities and
+  `session-report`. What the public installs. `session-report` is not a policy
+  capability: it turns the current conversation into a report the tester sends
+  with one click, so it has to ship where testers are. It only runs when asked.
 - `mdee-evaluation`, carrying `house-rules` and `evaluation`. A maintainer tool,
   kept out of the public product so policy users do not carry a capability aimed
   at whoever is working on the agent.
@@ -448,7 +450,7 @@ Bump `version` on both entries for every release. Testers cannot report which
 version they ran otherwise, and `evaluation` asks them for exactly that.
 
 **If a claude.ai install ever fails on the 2-entry layout**, collapse it to one
-entry listing all 11 skills. That is the lower-risk configuration and it costs
+entry listing all 12 skills. That is the lower-risk configuration and it costs
 only the `evaluation` separation.
 
 **The zips.** `tools/build-zips.py` builds both kinds, and they must never be

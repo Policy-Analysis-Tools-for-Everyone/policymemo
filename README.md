@@ -12,7 +12,7 @@ plausible-looking document on request.
 Inside it are 10 analytical capabilities that work together as one toolkit. You
 don't pick between them. Claude does.
 
-> **Beta 0.2.0.** The skills change as people use them. Read [Status](#status)
+> **Beta 0.2.1.** The skills change as people use them. Read [Status](#status)
 > before you rely on this for anything that matters.
 >
 > **Private beta, autumn 2026.** We're testing with policy students and a small group

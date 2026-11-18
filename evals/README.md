@@ -40,6 +40,17 @@ Beta reports come in through three channels:
 | Reply to the invite email | Practitioners | Only with consent to publish. Otherwise the finding and no conversation |
 | Student study feedback form | Students | **Stays within the study.** Commit only what the study's consent allows: usually an anonymised note, or the finding alone. See `student-study/README.md` |
 
+From `0.2.1`, a tester can say "report this session" and the `session-report` skill
+drafts the report and gives them a pre-filled link to either of the first two
+channels. Two things to know about those reports:
+
+- **The exchange is the agent's copy, not an export.** It is told to copy turns
+  verbatim, but it is reproducing them from its own context. Record it as a
+  Transcript only if the tester confirms it matches, or an emailed Share link
+  lets you check it. Otherwise it is a Note with quoted turns.
+- **The *skills* field is the agent's account of what it loaded.** Useful, since
+  the chat surface hides it, and no stronger than a debrief's invocation log.
+
 Then:
 
 1. Give the tester an ID, continuing from the last row in `wiki/testers.md`, and add

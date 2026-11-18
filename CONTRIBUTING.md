@@ -7,7 +7,7 @@ For people working on policymemo.ai rather than using it. Users want the
 
 | Folder | What it is | Edit by hand? |
 |---|---|---|
-| `skills/` | The 11 runtime skills. The only copy; everything else is generated from them or points at them | Yes |
+| `skills/` | The 12 runtime skills. The only copy; everything else is generated from them or points at them | Yes |
 | `reference/` | The method layer, sources, domain material, the memo corpus, `AUTHORING.md` and `BEHAVIOUR_SPEC.md` | Yes |
 | `evals/` | What testers actually saw, and the wiki distilled from it. Start at `evals/README.md` | Yes |
 | `site/` | Sources for policymemo.ai: `beta/`, `blog/`, `install/`, `updates/` | Yes |
@@ -24,7 +24,7 @@ cd policymemo
 claude --plugin-dir .
 ```
 
-That loads all 11 skills from `skills/` without installing anything.
+That loads all 12 skills from `skills/` without installing anything.
 [`reference/AUTHORING.md`](reference/AUTHORING.md) is the contract for writing or
 revising one. The 2 rules most often broken are *no document-shaped replies* and
 *do not restate the house rules*.
@@ -62,8 +62,8 @@ otherwise, and the evals are split by version.
 ## Packaging
 
 `.claude-plugin/marketplace.json` lists 2 plugin entries, both drawing from
-`skills/`. `mdee` carries `house-rules` and the 10 policy capabilities, and is what
-the public installs. `mdee-evaluation` carries `house-rules` and `evaluation`, so
+`skills/`. `mdee` carries `house-rules`, the 10 policy capabilities and `session-report`,
+and is what the public installs. `mdee-evaluation` carries `house-rules` and `evaluation`, so
 that people doing policy work don't carry a capability aimed at people maintaining
 the agent. `reference/AUTHORING.md` section 12 has the detail, including why the
 source is `./skills` and not the repository root.

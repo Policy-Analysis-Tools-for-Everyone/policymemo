@@ -9,7 +9,7 @@ description: >
   all of them.
 license: "CC BY-NC 4.0. policymemo.ai by Jack Strachan, https://policymemo.ai"
 metadata:
-  version: 0.2.0
+  version: 0.2.1
   status: written, behaviourally tested across 17 sessions and 4 testers;
     revised from that evidence (see evals/)
 ---

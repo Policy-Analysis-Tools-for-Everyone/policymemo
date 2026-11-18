@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: options
 Use when the question is what could actually be done: generating courses of action for a defined problem, repairing a weak or narrow option set, working out what the relevant actor can genuinely change, or turning a vague ambition into concrete policy choices. Also use when the options on the table are a preferred answer plus decoys, differ only in scale or delivery body, collapse genuinely different mechanisms under one label, try to do everything at once, or arrive as a familiar intervention with no explanation of why it fits.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/options/SKILL.md (a52f7924a80e).
+Built 2026-10-05 for Microsoft 365 Copilot from skills/options/SKILL.md (08791d492483).
 
 # Options
 

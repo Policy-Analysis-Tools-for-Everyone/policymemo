@@ -11,7 +11,7 @@ description: >
   else in the system is assumed to carry on behaving exactly as before.
 license: "CC BY-NC 4.0. policymemo.ai by Jack Strachan, https://policymemo.ai"
 metadata:
-  version: 0.2.0
+  version: 0.2.1
   status: written, exercised inside other sessions and in 1 reported run; no session of its own
 ---
 

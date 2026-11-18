@@ -1,6 +1,6 @@
 {
   "name": "policymemo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A policy-analysis agent. Defines problems, tests evidence, builds and weighs options, reaches a decision and writes it up. Challenges weak framing and refuses to invent figures.",
   "author": {
     "name": "Jack Strachan",

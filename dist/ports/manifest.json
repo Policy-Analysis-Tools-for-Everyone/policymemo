@@ -16,55 +16,55 @@
         {
           "file": "policymemo 01 problem.txt",
           "source": "skills/problem/SKILL.md",
-          "sha": "0ec99460a746",
+          "sha": "89b3d66b1952",
           "chars": 14163
         },
         {
           "file": "policymemo 02 stakeholders.txt",
           "source": "skills/stakeholders/SKILL.md",
-          "sha": "512b584dd58d",
+          "sha": "77f846bc4b61",
           "chars": 14362
         },
         {
           "file": "policymemo 03 evidence.txt",
           "source": "skills/evidence/SKILL.md",
-          "sha": "bf44daf469a4",
+          "sha": "caa025da91b6",
           "chars": 15490
         },
         {
           "file": "policymemo 04 options.txt",
           "source": "skills/options/SKILL.md",
-          "sha": "a52f7924a80e",
+          "sha": "08791d492483",
           "chars": 17297
         },
         {
           "file": "policymemo 05 criteria.txt",
           "source": "skills/criteria/SKILL.md",
-          "sha": "e084dd3c778f",
+          "sha": "400d5486286c",
           "chars": 12821
         },
         {
           "file": "policymemo 06 outcomes.txt",
           "source": "skills/outcomes/SKILL.md",
-          "sha": "d337cacd083a",
+          "sha": "0b8ca92b3795",
           "chars": 13194
         },
         {
           "file": "policymemo 07 trade-offs.txt",
           "source": "skills/trade-offs/SKILL.md",
-          "sha": "f27ace4dabd9",
+          "sha": "7db3cf51e221",
           "chars": 12043
         },
         {
           "file": "policymemo 08 decide.txt",
           "source": "skills/decide/SKILL.md",
-          "sha": "5f2ce8b62ac5",
+          "sha": "f5bcdba68888",
           "chars": 17491
         },
         {
           "file": "policymemo 09 story.txt",
           "source": "skills/story/SKILL.md",
-          "sha": "c0ccf139f49c",
+          "sha": "ac59bc563d2a",
           "chars": 26458
         }
       ],
@@ -72,7 +72,7 @@
       "skills": [
         {
           "skill": "policymemo-problem",
-          "sha": "0ec99460a746",
+          "sha": "89b3d66b1952",
           "skill_md_chars": 14164,
           "description_chars": 438,
           "files": [
@@ -81,7 +81,7 @@
         },
         {
           "skill": "policymemo-stakeholders",
-          "sha": "512b584dd58d",
+          "sha": "77f846bc4b61",
           "skill_md_chars": 14358,
           "description_chars": 447,
           "files": [
@@ -90,7 +90,7 @@
         },
         {
           "skill": "policymemo-evidence",
-          "sha": "bf44daf469a4",
+          "sha": "caa025da91b6",
           "skill_md_chars": 15490,
           "description_chars": 557,
           "files": [
@@ -99,7 +99,7 @@
         },
         {
           "skill": "policymemo-options",
-          "sha": "a52f7924a80e",
+          "sha": "08791d492483",
           "skill_md_chars": 17298,
           "description_chars": 534,
           "files": [
@@ -108,7 +108,7 @@
         },
         {
           "skill": "policymemo-criteria",
-          "sha": "e084dd3c778f",
+          "sha": "400d5486286c",
           "skill_md_chars": 12827,
           "description_chars": 639,
           "files": [
@@ -117,7 +117,7 @@
         },
         {
           "skill": "policymemo-outcomes",
-          "sha": "d337cacd083a",
+          "sha": "0b8ca92b3795",
           "skill_md_chars": 13196,
           "description_chars": 603,
           "files": [
@@ -126,7 +126,7 @@
         },
         {
           "skill": "policymemo-decide",
-          "sha": "d899dee40478",
+          "sha": "822dcec0ed39",
           "skill_md_chars": 17932,
           "description_chars": 807,
           "files": [
@@ -136,7 +136,7 @@
         },
         {
           "skill": "policymemo-story",
-          "sha": "c0ccf139f49c",
+          "sha": "ac59bc563d2a",
           "skill_md_chars": 17124,
           "description_chars": 530,
           "files": [
@@ -158,55 +158,55 @@
         },
         {
           "skill": "policymemo-problem",
-          "sha": "0ec99460a746",
+          "sha": "89b3d66b1952",
           "skill_md_chars": 21796,
           "description_chars": 438
         },
         {
           "skill": "policymemo-stakeholders",
-          "sha": "512b584dd58d",
+          "sha": "77f846bc4b61",
           "skill_md_chars": 21990,
           "description_chars": 447
         },
         {
           "skill": "policymemo-evidence",
-          "sha": "bf44daf469a4",
+          "sha": "caa025da91b6",
           "skill_md_chars": 23122,
           "description_chars": 557
         },
         {
           "skill": "policymemo-options",
-          "sha": "a52f7924a80e",
+          "sha": "08791d492483",
           "skill_md_chars": 24930,
           "description_chars": 534
         },
         {
           "skill": "policymemo-criteria",
-          "sha": "e084dd3c778f",
+          "sha": "400d5486286c",
           "skill_md_chars": 20459,
           "description_chars": 639
         },
         {
           "skill": "policymemo-outcomes",
-          "sha": "d337cacd083a",
+          "sha": "0b8ca92b3795",
           "skill_md_chars": 20828,
           "description_chars": 603
         },
         {
           "skill": "policymemo-trade-offs",
-          "sha": "f27ace4dabd9",
+          "sha": "7db3cf51e221",
           "skill_md_chars": 19673,
           "description_chars": 614
         },
         {
           "skill": "policymemo-decide",
-          "sha": "5f2ce8b62ac5",
+          "sha": "f5bcdba68888",
           "skill_md_chars": 25125,
           "description_chars": 581
         },
         {
           "skill": "policymemo-story",
-          "sha": "c0ccf139f49c",
+          "sha": "ac59bc563d2a",
           "skill_md_chars": 34094,
           "description_chars": 530
         }
@@ -222,55 +222,55 @@
         },
         {
           "skill": "policymemo-problem",
-          "sha": "0ec99460a746",
+          "sha": "89b3d66b1952",
           "skill_md_chars": 21811,
           "description_chars": 438
         },
         {
           "skill": "policymemo-stakeholders",
-          "sha": "512b584dd58d",
+          "sha": "77f846bc4b61",
           "skill_md_chars": 22005,
           "description_chars": 447
         },
         {
           "skill": "policymemo-evidence",
-          "sha": "bf44daf469a4",
+          "sha": "caa025da91b6",
           "skill_md_chars": 23137,
           "description_chars": 557
         },
         {
           "skill": "policymemo-options",
-          "sha": "a52f7924a80e",
+          "sha": "08791d492483",
           "skill_md_chars": 24945,
           "description_chars": 534
         },
         {
           "skill": "policymemo-criteria",
-          "sha": "e084dd3c778f",
+          "sha": "400d5486286c",
           "skill_md_chars": 20474,
           "description_chars": 639
         },
         {
           "skill": "policymemo-outcomes",
-          "sha": "d337cacd083a",
+          "sha": "0b8ca92b3795",
           "skill_md_chars": 20843,
           "description_chars": 603
         },
         {
           "skill": "policymemo-trade-offs",
-          "sha": "f27ace4dabd9",
+          "sha": "7db3cf51e221",
           "skill_md_chars": 19688,
           "description_chars": 614
         },
         {
           "skill": "policymemo-decide",
-          "sha": "5f2ce8b62ac5",
+          "sha": "f5bcdba68888",
           "skill_md_chars": 25140,
           "description_chars": 581
         },
         {
           "skill": "policymemo-story",
-          "sha": "c0ccf139f49c",
+          "sha": "ac59bc563d2a",
           "skill_md_chars": 27781,
           "description_chars": 530
         }

@@ -89,6 +89,7 @@ For each pair, the first should load the named skill and the second should not.
 | `decide` | "I've done the analysis, I keep going round in circles, and I have to recommend something on Friday." | "What would each option cost us?" → `outcomes` then `trade-offs` |
 | `story` | "Turn this into a 2-page memo for the director." | "Is my analysis good enough yet?" → `decide`, the decision-readiness test |
 | `evaluation` | "Here's a transcript where the agent told me something confidently wrong. What went wrong?" | "Did the policy work after we implemented it?" → out of scope, and the skill should say so |
+| `session-report` | "This went badly, can I send this conversation to whoever runs policymemo?" | "Write me a short report on the consultation responses for the board." → `story`. Also must not fire, or be offered, when the user only complains: "That answer was useless." |
 | `house-rules` | Always in play. Not separately triggered by a user request | Should not be presented to the user as a topic |
 
 **One more routing case, the hardest.** Input: *"I need help with my policy

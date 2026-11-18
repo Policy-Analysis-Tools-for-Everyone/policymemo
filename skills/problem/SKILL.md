@@ -9,7 +9,7 @@ description: >
   be several. Not for choosing between options already on the table.
 license: "CC BY-NC 4.0. policymemo.ai by Jack Strachan, https://policymemo.ai"
 metadata:
-  version: 0.2.0
+  version: 0.2.1
   status: written, behaviourally tested in 4 real sessions; revised twice (see evals/)
 ---
 
