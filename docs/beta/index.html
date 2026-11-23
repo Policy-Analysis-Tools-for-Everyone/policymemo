@@ -170,6 +170,7 @@
   .beta-hero h1 { max-width: 14ch; }
   .beta-routes { display: grid; gap: 16px; }
   @media (min-width: 760px) { .beta-routes { grid-template-columns: 1fr 1fr; gap: 20px; } }
+  @media (min-width: 1000px) { .beta-routes { grid-template-columns: repeat(3, 1fr); } }
   .route-card { display: flex; flex-direction: column; align-items: flex-start; background: var(--surface);
     border: 1px solid var(--line); border-radius: 18px; padding: 28px 26px; scroll-margin-top: 80px; }
   .route-card h2 { margin-bottom: 10px; }
@@ -213,18 +214,25 @@
 
 <section class="wrap beta-routes" aria-label="Ways to join the beta">
   <article class="route-card" id="students">
-    <p class="eyebrow">Students</p>
-    <h2>Student beta</h2>
-    <p>For students taking part through UCL or another participating university.</p>
+    <p class="eyebrow">UCL students</p>
+    <h2>UCL student beta</h2>
+    <p>For UCL students taking part in the research study.</p>
     <p class="small">The form includes the study's information sheet and consent. If you're on a participating course, your course team will point you to it.</p>
     <a class="btn primary" href="https://forms.cloud.microsoft/e/VeuaDdFdYd">Student access<span class="ico ico-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="stem" d="M2.5 8h10"/><path class="head" d="M8.5 4 12.5 8 8.5 12"/></svg></span></a>
+  </article>
+  <article class="route-card" id="universities">
+    <p class="eyebrow">Universities</p>
+    <h2>Other participating universities</h2>
+    <p>For staff and students at other universities taking part in the beta.</p>
+    <p class="small">Email us to request access. The button opens an email with a few questions to fill in. If your course is taking part, your course team may arrange access for you.</p>
+    <a class="btn primary" href="mailto:jack@civicworks.co?subject=Request%20for%20policymemo.ai%20beta%20access%20%28university%29&amp;body=Hi%20Jack%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20policymemo.ai%20beta.%0A%0AName%3A%0AUniversity%3A%0ACourse%2C%20or%20my%20role%20if%20I%27m%20staff%3A%0AWhat%20I%27d%20like%20to%20try%20it%20on%3A%0AWhich%20AI%20tool%20I%20use%20%28Claude%2C%20ChatGPT%2C%20Copilot%20or%20Gemini%29%3A%0A%0AThanks%2C">Email to request access<span class="ico ico-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="stem" d="M2.5 8h10"/><path class="head" d="M8.5 4 12.5 8 8.5 12"/></svg></span></a>
   </article>
   <article class="route-card" id="practitioners">
     <p class="eyebrow">Practitioners</p>
     <h2>Practitioner beta</h2>
     <p>Use policymemo.ai on a real policy problem and help shape the beta.</p>
-    <p class="small">We invite people in small groups, so requesting access doesn't mean you'll get in straight away. We'll email to say we've received your request, and again if we can invite you.</p>
-    <span class="soon">Opening soon</span>
+    <p class="small">We invite people in small groups, so requesting access doesn't mean you'll get in straight away. We'll reply to say we've received your request, and again if we can invite you.</p>
+    <a class="btn primary" href="mailto:jack@civicworks.co?subject=Request%20for%20policymemo.ai%20beta%20access%20%28practitioner%29&amp;body=Hi%20Jack%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20policymemo.ai%20beta.%0A%0AName%3A%0AOrganisation%3A%0AMy%20role%2C%20or%20the%20type%20of%20policy%20work%20I%20do%3A%0AA%20policy%20problem%20I%27d%20like%20to%20try%20it%20on%20%28a%20line%20is%20enough%29%3A%0AWhich%20AI%20tool%20I%20use%20%28Claude%2C%20ChatGPT%2C%20Copilot%20or%20Gemini%29%3A%0A%0AThanks%2C">Email to request access<span class="ico ico-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="stem" d="M2.5 8h10"/><path class="head" d="M8.5 4 12.5 8 8.5 12"/></svg></span></a>
   </article>
 </section>
 

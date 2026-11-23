@@ -2,8 +2,11 @@
 
 How people get into the policymemo.ai private beta, and how one person runs it.
 
-The website is the front door. It explains the beta and links to two Microsoft
-Forms. Nobody gets access by submitting a form. Jack reviews each request and
+The website is the front door. It explains the beta and offers three routes:
+UCL students use the study's Microsoft Form; other participating universities and
+practitioners email `support_email`, with a prefilled request (subject and
+questions are set in `build_beta` in `tools/build-site.py`). Add a practitioner
+form later by setting `practitioner_form_url`. Nobody gets access by submitting a form. Jack reviews each request and
 invites people in waves. The only thing that sends set-up instructions is
 changing someone's status to `Invited`.
 
@@ -35,10 +38,10 @@ Edit `site/beta/config.json` and push to `main`. The "Build site" workflow repub
 
 | Key | Used for | If empty |
 | --- | --- | --- |
-| `student_form_url` | The Student access button | The card shows "Opening soon" |
-| `practitioner_form_url` | The Request beta access button | The card shows "Opening soon" |
+| `student_form_url` | The UCL student card's Student access button | The card shows "Opening soon" |
+| `practitioner_form_url` | Replaces the practitioner card's email button with a form | The card uses the prefilled email |
 | `access_instructions_url` | "Already invited? Set-up instructions" on `/beta`. Use the same link in the invite emails | Not allowed |
-| `support_email` | "Questions?" on `/beta`. Use the same address as the reply-to in the emails | Not allowed |
+| `support_email` | "Questions?" on `/beta`, and the address the university and practitioner email buttons write to. Use the same address as the reply-to in the emails | Not allowed |
 | `privacy_url` | "How we use your information" on `/beta` | The link is left out |
 
 URLs must start with `https://`. A Forms link comes from the form's **Collect
