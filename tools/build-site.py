@@ -35,6 +35,7 @@ import json
 import pathlib
 import re
 import sys
+import urllib.parse
 
 import markdown
 
@@ -344,18 +345,43 @@ def beta_config():
 
 
 def build_beta(css, home):
-    """The beta page: two access routes. A route whose form URL is not set yet shows 'Opening soon'."""
+    """The beta page: three access routes. UCL students use the study form ('Opening soon' if its URL
+    is not set). Other universities and practitioners email support_email, with a prefilled request,
+    unless practitioner_form_url is set, which then replaces the practitioner email."""
     cfg = beta_config()
     def cta(url, label):
         if not url:
             return '<span class="soon">Opening soon</span>'
         return f'<a class="btn primary" href="{html.escape(url)}">{label}<span class="ico ico-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="stem" d="M2.5 8h10"/><path class="head" d="M8.5 4 12.5 8 8.5 12"/></svg></span></a>'
+    def mailto(subject, lines):
+        q = urllib.parse.quote
+        return f"mailto:{cfg['support_email']}?subject={q(subject)}&body={q(chr(10).join(lines))}"
+    tool_line = "Which AI tool I use (Claude, ChatGPT, Copilot or Gemini):"
+    university_mail = mailto("Request for policymemo.ai beta access (university)", [
+        "Hi Jack,", "",
+        "I'd like to request access to the policymemo.ai beta.", "",
+        "Name:",
+        "University:",
+        "Course, or my role if I'm staff:",
+        "What I'd like to try it on:",
+        tool_line, "",
+        "Thanks,"])
+    practitioner_mail = mailto("Request for policymemo.ai beta access (practitioner)", [
+        "Hi Jack,", "",
+        "I'd like to request access to the policymemo.ai beta.", "",
+        "Name:",
+        "Organisation:",
+        "My role, or the type of policy work I do:",
+        "A policy problem I'd like to try it on (a line is enough):",
+        tool_line, "",
+        "Thanks,"])
     privacy = "We use your email address to manage your access and contact you about the beta. We only send other updates if you ask us to."
     if cfg["privacy_url"]:
         privacy += f' <a href="{html.escape(cfg["privacy_url"])}">How we use your information</a>.'
     fills = {
-        "student_cta": cta(cfg["student_form_url"], "Student access"),
-        "practitioner_cta": cta(cfg["practitioner_form_url"], "Request beta access"),
+        "student_cta": cta(cfg["student_form_url"], "Request access"),
+        "university_cta": cta(university_mail, "Request access"),
+        "practitioner_cta": cta(cfg["practitioner_form_url"] or practitioner_mail, "Request access"),
         "privacy_line": privacy,
         "access_instructions_url": html.escape(cfg["access_instructions_url"]),
         "support_email": html.escape(cfg["support_email"]),
