@@ -379,10 +379,9 @@ def build_beta(css, home):
     if cfg["privacy_url"]:
         privacy += f' <a href="{html.escape(cfg["privacy_url"])}">How we use your information</a>.'
     fills = {
-        "student_cta": cta(cfg["student_form_url"], "Student access"),
-        "university_cta": cta(university_mail, "Email to request access"),
-        "practitioner_cta": cta(cfg["practitioner_form_url"] or practitioner_mail,
-                                "Request beta access" if cfg["practitioner_form_url"] else "Email to request access"),
+        "student_cta": cta(cfg["student_form_url"], "Request access"),
+        "university_cta": cta(university_mail, "Request access"),
+        "practitioner_cta": cta(cfg["practitioner_form_url"] or practitioner_mail, "Request access"),
         "privacy_line": privacy,
         "access_instructions_url": html.escape(cfg["access_instructions_url"]),
         "support_email": html.escape(cfg["support_email"]),

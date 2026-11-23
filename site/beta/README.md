@@ -38,7 +38,7 @@ Edit `site/beta/config.json` and push to `main`. The "Build site" workflow repub
 
 | Key | Used for | If empty |
 | --- | --- | --- |
-| `student_form_url` | The UCL student card's Student access button | The card shows "Opening soon" |
+| `student_form_url` | The UCL student card's Request access button | The card shows "Opening soon" |
 | `practitioner_form_url` | Replaces the practitioner card's email button with a form | The card uses the prefilled email |
 | `access_instructions_url` | "Already invited? Set-up instructions" on `/beta`. Use the same link in the invite emails | Not allowed |
 | `support_email` | "Questions?" on `/beta`, and the address the university and practitioner email buttons write to. Use the same address as the reply-to in the emails | Not allowed |
