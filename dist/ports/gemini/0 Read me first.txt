@@ -16,4 +16,4 @@ Cannot upload the files? You may be looking inside the zip without having
 extracted it. Close this. On Windows, right-click the zip and choose
 Extract All. On a Mac, double-click the zip. Then use the folder that appears.
 
-Built 2026-10-05 from house-rules e59f06f77357.
+Built 2026-11-24 from house-rules e59f06f77357.

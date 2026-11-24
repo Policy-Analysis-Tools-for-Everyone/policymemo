@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: outcomes
 Use when the question is what would actually happen: projecting the likely effects of a course of action, working out how large an effect would be and how quickly, comparing an option against what would happen anyway, or testing whether a forecast holds up. Also use when a proposal is being described in terms of its intentions rather than its consequences, when "will reduce demand" appears with no magnitude or timescale, when a precise-looking figure rests on a guess, when the base case is today frozen in time, or when everyone else in the system is assumed to carry on behaving exactly as before.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/outcomes/SKILL.md (d337cacd083a).
+Built 2026-11-24 for Microsoft 365 Copilot from skills/outcomes/SKILL.md (d337cacd083a).
 
 # Outcomes
 
