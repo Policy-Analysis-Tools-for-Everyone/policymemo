@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: decide
 Use when a choice has to be made: reaching a reasoned recommendation, saying what the current analysis supports and why, testing whether the preferred option is actually viable, or judging whether the case is decision-ready at all. Also use when someone cannot decide and the reason needs diagnosing, when the choice is between acting now and learning first, when the question is how reversible a commitment is or whether it could be staged, and when a recommendation needs its strongest contrary case, its accepted trade-off and the conditions that should reopen it made explicit.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/decide/SKILL.md (5f2ce8b62ac5).
+Built 2026-11-24 for Microsoft 365 Copilot from skills/decide/SKILL.md (5f2ce8b62ac5).
 
 # Decide
 

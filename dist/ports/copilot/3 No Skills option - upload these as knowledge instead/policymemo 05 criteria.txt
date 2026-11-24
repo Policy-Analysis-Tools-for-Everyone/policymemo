@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: criteria
 Use when the question is what counts as better: deciding what the options should be judged against, what the primary objective actually is, which requirements are hard constraints rather than tradable values, and how distribution, rights or process values should be made explicit. Also use when options are hard to compare because the standards were never stated, when "equity" or "value for money" or "customer experience" is being used as a criterion without saying what pattern counts as better, when a convenient metric has quietly become the objective, or when a scoring table is deciding the answer without anyone owning the weights.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/criteria/SKILL.md (e084dd3c778f).
+Built 2026-11-24 for Microsoft 365 Copilot from skills/criteria/SKILL.md (e084dd3c778f).
 
 # Criteria
 

@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: problem
 Use when the user brings a public problem that is not yet defined: messy notes, a concern, a complaint, an inherited proposal, a draft problem statement, or a solution presented as if it were a problem. Also use when a working problem statement is vague, solution-shaped, unquantified, rests on an unexamined causal claim, or when what the user has called one problem may be several. Not for choosing between options already on the table.
-Built 2026-10-05 for Microsoft 365 Copilot from skills/problem/SKILL.md (0ec99460a746).
+Built 2026-11-24 for Microsoft 365 Copilot from skills/problem/SKILL.md (0ec99460a746).
 
 # Defining the problem
 

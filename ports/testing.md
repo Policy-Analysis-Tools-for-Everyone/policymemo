@@ -14,7 +14,7 @@ Gemini skills, or Copilot knowledge files). A failure on a port can come from an
 
 Run these in order. Each stage is cheap and stops a wasted run at the next.
 
-1. **Install check.** Follow the [install page](https://policymemo.ai/install/) exactly, from the download onwards. Note anything about the download or unzipping that would confuse someone new to it. Record
+1. **Install check.** Follow the set-up guide for the tool (`python3 tools/build-guides.py`) exactly, from the download onwards. Note anything about the download or unzipping that would confuse someone new to it. Record
    whether the instructions saved whole, and on Copilot whether skills, knowledge
    upload, both or neither were available. On Gemini, record whether all 10 skills
    uploaded and are switched on.

@@ -3,3 +3,5 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+guides/
+__pycache__/

@@ -15,13 +15,13 @@ a port never forks it.
     python3 tools/build-ports.py           build into dist/ports/
     python3 tools/build-ports.py --check   validate only, write nothing
 
-Set-up steps for people installing a port live on the install page, `site/install/body.html`,
-which is the only copy. Each zip, `dist/ports/policymemo-ai-<surface>.zip`, opens to files
+Set-up steps for people installing a port live in `site/install/body.html`, which is the
+only copy. `tools/build-guides.py` turns it into the per-tool set-up guides sent with invites. Each zip, `dist/ports/policymemo-ai-<surface>.zip`, opens to files
 named for what to do with them, because many people will not read anything else:
 
 Copilot:
 
-    0 Read me first.txt                  short steps, and a link to the install page
+    0 Read me first.txt                  short steps, and a pointer to the set-up guide
     1 Paste into Instructions.txt
     2 Upload these 8 skills/             policymemo-problem.zip to policymemo-story.zip
     3 No Skills option - upload these as knowledge instead/       the 10 knowledge files

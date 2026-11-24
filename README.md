@@ -23,9 +23,9 @@ don't pick between them. Claude does.
 
 ## Install
 
-**[policymemo.ai/install](https://policymemo.ai/install/)** has the steps for Claude
-(every plan, Free included), Microsoft 365 Copilot and Google Gemini. It takes
-about 2 minutes, and there's a
+policymemo.ai is in private beta. Each invite comes with a set-up guide for the AI tool
+you use: Claude (every plan, Free included), ChatGPT, Microsoft 365 Copilot or Google
+Gemini. It takes about 2 minutes, and there's a
 [short video for Claude](https://www.loom.com/share/7a0075882a884d71bbc6a4b4dd29c9bc).
 
 ## Using it
