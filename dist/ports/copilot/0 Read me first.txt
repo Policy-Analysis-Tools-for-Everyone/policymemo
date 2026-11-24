@@ -1,7 +1,7 @@
 policymemo.ai for Microsoft 365 Copilot, beta 0.2.0
 
-Full steps, with copy buttons and help if something goes wrong:
-https://policymemo.ai/install/#copilot
+Full steps, and help if something goes wrong, are in the set-up guide
+that came with your beta invite.
 
 In short:
 1. In Copilot Chat, click Create agent. When it opens a chat called

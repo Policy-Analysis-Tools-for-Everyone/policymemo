@@ -1,7 +1,7 @@
 # Contributing
 
 For people working on policymemo.ai rather than using it. Users want the
-[README](README.md) or the [install page](https://policymemo.ai/install/).
+[README](README.md) or the set-up guide that came with their beta invite.
 
 ## Where things live
 
@@ -10,7 +10,7 @@ For people working on policymemo.ai rather than using it. Users want the
 | `skills/` | The 11 runtime skills. The only copy; everything else is generated from them or points at them | Yes |
 | `reference/` | The method layer, sources, domain material, the memo corpus, `AUTHORING.md` and `BEHAVIOUR_SPEC.md` | Yes |
 | `evals/` | What testers actually saw, and the wiki distilled from it. Start at `evals/README.md` | Yes |
-| `site/` | Sources for policymemo.ai: `beta/`, `blog/`, `install/`, `updates/` | Yes |
+| `site/` | Sources for policymemo.ai: `beta/`, `blog/`, `updates/`, and `install/`, the source of the set-up guides | Yes |
 | `ports/` | The hand-written core of the Copilot, Gemini and ChatGPT versions | Yes |
 | `tools/` | Build scripts | Yes |
 | `docs/` | The published website (GitHub Pages). Mostly generated from `site/` | Only `index.html`, icons, images |
@@ -148,9 +148,18 @@ policymemo.ai is a static site served by GitHub Pages from `docs/`.
 | --- | --- | --- |
 | `/` | Product home | `docs/index.html`, hand-written apart from generated links |
 | `/beta` | How to join the private beta | `site/beta/body.html`, with links in `site/beta/config.json` |
-| `/install` | Set-up instructions, linked from invite emails | `site/install/` |
 | `/updates` | Plain changelog, newest first | `site/updates/changelog.md` |
 | `/blog` | Notes. Linked from the footer, not the nav | `site/blog/posts/` |
+
+There is no install page. The beta is private, so set-up steps are not published:
+each invite carries the guide for the tool that person uses. Build them with
+
+```bash
+python3 tools/build-guides.py   # guides/policymemo-ai-setup-<tool>.html and .pdf, from site/install/body.html
+```
+
+`guides/` is gitignored because this repository is public. Send the files by hand,
+and edit `site/install/body.html` to change the steps.
 
 **The mark.** There is no mascot. The brand is a plain ink burst beside the name
 "policymemo.ai"; keep the burst jagged so it never drifts toward the Claude logo. Each skill

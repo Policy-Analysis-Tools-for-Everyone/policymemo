@@ -1,7 +1,7 @@
 policymemo.ai for Google Gemini, beta 0.2.0
 
-Full steps, with copy buttons and help if something goes wrong:
-https://policymemo.ai/install/#gemini
+Full steps, and help if something goes wrong, are in the set-up guide
+that came with your beta invite.
 
 In short:
 1. Open Gemini on a computer, at gemini.google.com or in the Mac app, and
