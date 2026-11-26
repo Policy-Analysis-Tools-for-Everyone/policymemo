@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: trade-offs
 Use when the question is what a choice costs: comparing serious options once their likely outcomes are known, working out what is gained and what is given up and how large each is, finding what the choice actually turns on, or establishing whether one option simply dominates. Also use when a comparison is being made between intervention labels rather than expected consequences, when incompatible values are being converted into one score, when a positive aggregate is hiding who loses, when a weighted table is producing the answer, or when a disagreement about what matters is being treated as an evidence gap.
-Built 2026-11-24 for Microsoft 365 Copilot from skills/trade-offs/SKILL.md (f27ace4dabd9).
+Built 2026-11-26 for Microsoft 365 Copilot from skills/trade-offs/SKILL.md (f27ace4dabd9).
 
 # Trade-offs
 

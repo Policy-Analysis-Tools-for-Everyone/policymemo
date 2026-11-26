@@ -1,6 +1,6 @@
 policymemo.ai knowledge file: stakeholders
 Use when the work turns on who is involved: who holds a problem, who must authorise or fund or cooperate with a response, who would be affected differently, why an actor is resisting, what power someone actually has, or who has to be brought on board and in what order. Also use when a claim about someone's motives, influence or position is being asserted without evidence, or when an organisation is being treated as though it had a single mind.
-Built 2026-11-24 for Microsoft 365 Copilot from skills/stakeholders/SKILL.md (512b584dd58d).
+Built 2026-11-26 for Microsoft 365 Copilot from skills/stakeholders/SKILL.md (512b584dd58d).
 
 # Stakeholders
 
