@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build the set-up guides that go out with beta invites: one per AI tool, as HTML and PDF.
 
-The beta is private, so set-up steps are not published on policymemo.ai. Instead each
-invite carries the guide for the tool that person uses. The guides are built from the
-same hand-written source the install page used, site/install/body.html, so there is
-still only one copy of the steps.
+The full steps are also published at policymemo.ai/install. These guides are the
+single-tool version to attach to an invite. They are built from the same hand-written
+source as the install page, site/install/body.html, so there is still only one copy
+of the steps.
 
     python3 tools/build-guides.py            # HTML and PDF into guides/
     python3 tools/build-guides.py --html     # HTML only (no browser needed)
