@@ -21,11 +21,8 @@ nav and footer, and a "Read the post" link on each skill card, all of which
 stay empty until something is published, so the site never shows an empty blog.
 
 It also writes the site's other generated pages, all in the same chrome:
-docs/beta/ from site/beta/ (form links and contact details come from
-site/beta/config.json), and docs/updates/ from site/updates/changelog.md.
-
-There is no install page: the beta is private, so set-up steps go out with each invite
-as a guide built by tools/build-guides.py from site/install/body.html.
+docs/install/ from site/install/, docs/beta/ from site/beta/ (form links and contact
+details come from site/beta/config.json), and docs/updates/ from site/updates/changelog.md.
 
     python3 tools/build-site.py              # publish
     python3 tools/build-site.py --drafts OUT # preview everything, drafts included, into OUT
@@ -47,6 +44,8 @@ POSTS = ROOT / "site" / "blog" / "posts"
 CSS = ROOT / "site" / "blog" / "blog.css"
 OUT = ROOT / "docs" / "blog"
 HOME = ROOT / "docs" / "index.html"
+INSTALL = ROOT / "site" / "install"
+INSTALL_OUT = ROOT / "docs" / "install"
 BETA = ROOT / "site" / "beta"
 BETA_OUT = ROOT / "docs" / "beta"
 CHANGELOG = ROOT / "site" / "updates" / "changelog.md"
@@ -184,6 +183,7 @@ def page(title, description, body, css, home, depth_note="", current="notes"):
       <a href="{home}beta/">Beta</a>
       <a href="{home}updates/">Updates</a>
       <a href="{home}blog/">Notes</a>
+      <a href="{home}install/">Install</a>
       <a href="{FEEDBACK}">Feedback</a>
       <a href="https://github.com/Policy-Analysis-Tools-for-Everyone/policymemo">GitHub</a>
     </nav>
@@ -318,9 +318,18 @@ def build_feed(all_posts, title, category):
 """
 
 
+def build_install(css, home):
+    """The install page: one page, one panel per AI tool. Its body is hand-written in site/install/."""
+    body = (INSTALL / "body.html").read_text(encoding="utf-8")
+    css = css + "\n" + (INSTALL / "install.css").read_text(encoding="utf-8")
+    return page("Install · policymemo.ai",
+                "Install policymemo.ai in Claude, ChatGPT, Microsoft 365 Copilot or Google Gemini. You set it up once, on a computer.",
+                body, css, home, current=None)
+
+
 def beta_config():
     cfg = json.loads((BETA / "config.json").read_text(encoding="utf-8"))
-    keys = ("student_form_url", "practitioner_form_url", "support_email", "privacy_url")
+    keys = ("student_form_url", "practitioner_form_url", "access_instructions_url", "support_email", "privacy_url")
     for k in keys:
         if not isinstance(cfg.get(k), str):
             raise SystemExit(f"site/beta/config.json needs '{k}' (an empty string if not set yet)")
@@ -330,8 +339,8 @@ def beta_config():
         if k == "support_email" and v and not re.fullmatch(r"[^@\s\"<>]+@[^@\s\"<>]+\.[^@\s\"<>]+", v):
             raise SystemExit("site/beta/config.json: 'support_email' is not an email address")
         cfg[k] = v
-    if not cfg["support_email"]:
-        raise SystemExit("site/beta/config.json: 'support_email' must be set")
+    if not cfg["access_instructions_url"] or not cfg["support_email"]:
+        raise SystemExit("site/beta/config.json: 'access_instructions_url' and 'support_email' must be set")
     return cfg
 
 
@@ -374,6 +383,7 @@ def build_beta(css, home):
         "university_cta": cta(university_mail, "Request access"),
         "practitioner_cta": cta(cfg["practitioner_form_url"] or practitioner_mail, "Request access"),
         "privacy_line": privacy,
+        "access_instructions_url": html.escape(cfg["access_instructions_url"]),
         "support_email": html.escape(cfg["support_email"]),
     }
     body = (BETA / "body.html").read_text(encoding="utf-8")
@@ -454,6 +464,8 @@ def main():
             continue
         (OUT / name).write_text(build_feed(posts, title, category), encoding="utf-8")
     update_home(posts)
+    INSTALL_OUT.mkdir(parents=True, exist_ok=True)
+    (INSTALL_OUT / "index.html").write_text(build_install(css, "../"), encoding="utf-8")
     BETA_OUT.mkdir(parents=True, exist_ok=True)
     (BETA_OUT / "index.html").write_text(build_beta(css, "../"), encoding="utf-8")
     UPDATES_OUT.mkdir(parents=True, exist_ok=True)

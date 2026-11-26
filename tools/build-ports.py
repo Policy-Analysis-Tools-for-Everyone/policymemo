@@ -65,6 +65,7 @@ CC BY-NC 4.0". Every file here carries that line; keep it in anything you share.
 
 Full terms: https://github.com/Policy-Analysis-Tools-for-Everyone/policymemo/blob/main/LICENSE-CONTENT.md
 """
+INSTALL_URL = "https://policymemo.ai/install/#{surface}"
 
 # Copilot custom skills (Agent Builder): at most 8 per agent, SKILL.md under
 # 20,000 characters, description at most 1,024. There are 9 capabilities, so one
@@ -510,8 +511,8 @@ def readme(surface: str, house_sha: str, build_date: str) -> str:
                                   skills=GEMINI_SKILLS_DIR if spec.get("standalone_skills") else SKILLS_DIR)
     return (
         f"policymemo.ai for {spec['label']}, beta {version()}\n\n"
-        "Full steps, and help if something goes wrong, are in the set-up guide\n"
-        "that came with your beta invite.\n\n"
+        f"Full steps, with copy buttons and help if something goes wrong:\n"
+        f"{INSTALL_URL.format(surface=surface)}\n\n"
         f"In short:\n{steps}\n"
         "Cannot upload the files? You may be looking inside the zip without having\n"
         "extracted it. Close this. On Windows, right-click the zip and choose\n"
